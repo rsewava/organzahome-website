@@ -1,0 +1,128 @@
+CREATE DATABASE transparent;
+
+USE transparent;
+
+CREATE TABLE artists
+(
+	artist_id INT(9) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    artist VARCHAR(70) UNIQUE NOT NULL,
+    create_date TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    last_update TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    start_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW START,
+    end_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW END,
+    PERIOD FOR SYSTEM_TIME(start_timestamp, end_timestamp)
+)
+WITH SYSTEM VERSIONING;
+
+CREATE TABLE playlists
+(
+	playlist_id INT(9) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    playlist VARCHAR(70) UNIQUE NOT NULL,
+    create_date TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    last_update TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    start_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW START,
+    end_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW END,
+    PERIOD FOR SYSTEM_TIME(start_timestamp, end_timestamp)
+)
+WITH SYSTEM VERSIONING;
+
+CREATE TABLE pages
+(
+	page_id INT(9) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    page VARCHAR(70) UNIQUE NOT NULL,
+    create_date TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    last_update TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    start_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW START,
+    end_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW END,
+    PERIOD FOR SYSTEM_TIME(start_timestamp, end_timestamp)
+)
+WITH SYSTEM VERSIONING;
+
+CREATE TABLE tracks
+(
+	track_id INT(9) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    track VARCHAR(70) UNIQUE NOT NULL,
+    create_date TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    last_update TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    start_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW START,
+    end_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW END,
+    PERIOD FOR SYSTEM_TIME(start_timestamp, end_timestamp)
+)
+WITH SYSTEM VERSIONING;
+
+INSERT INTO
+`artists` (`artist_id`, `artist`, `create_date`, `last_update`)
+VALUES
+(NULL, '2Pac', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Bob Marley', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Drake', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Ginuwine', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Michael Jackson', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Nas', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Nelly Furtado', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Taylor Swift', current_timestamp(6), current_timestamp(6)),
+(NULL, 'The Game', current_timestamp(6), current_timestamp(6)),
+(NULL, 'The Notorious B.I.G.', current_timestamp(6), current_timestamp(6));
+
+INSERT INTO
+`playlists` (`playlist_id`, `playlist`, `create_date`, `last_update`)
+VALUES
+(NULL, '00s', current_timestamp(), current_timestamp()),
+(NULL, '00s Alternative', current_timestamp(), current_timestamp()),
+(NULL, '00s British', current_timestamp(), current_timestamp()),
+(NULL, '00s Covers', current_timestamp(), current_timestamp()),
+(NULL, '00s Dancehall', current_timestamp(), current_timestamp()),
+(NULL, '00s Female Vocalists', current_timestamp(), current_timestamp()),
+(NULL, '00s Folk-pop', current_timestamp(), current_timestamp()),
+(NULL, '00s Funk', current_timestamp(), current_timestamp()),
+(NULL, '00s Hip Hop', current_timestamp(), current_timestamp()),
+(NULL, '00s Hip-Hop', current_timestamp(), current_timestamp()),
+(NULL, '00s Hiphop', current_timestamp(), current_timestamp()),
+(NULL, '00s House', current_timestamp(), current_timestamp()),
+(NULL, '00s Indie', current_timestamp(), current_timestamp()),
+(NULL, '00s Lovers Rock', current_timestamp(), current_timestamp()),
+(NULL, '00s Pop', current_timestamp(), current_timestamp()),
+(NULL, '00s R&B', current_timestamp(), current_timestamp()),
+(NULL, '00s Rap', current_timestamp(), current_timestamp()),
+(NULL, '00s Reggae', current_timestamp(), current_timestamp()),
+(NULL, '00s Reggae Fusion', current_timestamp(), current_timestamp()),
+(NULL, '00s RnB', current_timestamp(), current_timestamp()),
+(NULL, '00s Rock', current_timestamp(), current_timestamp()),
+(NULL, '00s Soca', current_timestamp(), current_timestamp()),
+(NULL, '00s Soul', current_timestamp(), current_timestamp()),
+(NULL, '10s', current_timestamp(), current_timestamp()),
+(NULL, '10s Dance', current_timestamp(), current_timestamp()),
+(NULL, '10s Electronic', current_timestamp(), current_timestamp()), (NULL, '10s Female Vocalists', current_timestamp(), current_timestamp()),
+(NULL, '10s Hip Hop', current_timestamp(), current_timestamp()), (NULL, '10s Hip-Hop', current_timestamp(), current_timestamp()), (NULL, '10s Hiphop', current_timestamp(), current_timestamp()),
+(NULL, '10s House', current_timestamp(), current_timestamp()), (NULL, '10s Pop', current_timestamp(), current_timestamp()), (NULL, '10s R&B', current_timestamp(), current_timestamp()),
+(NULL, '10s Rap', current_timestamp(), current_timestamp()), (NULL, '10s Reggae', current_timestamp(), current_timestamp()), (NULL, '10s RnB', current_timestamp(), current_timestamp()),
+(NULL, '10s Trap', current_timestamp(), current_timestamp()), (NULL, '112', current_timestamp(), current_timestamp()), (NULL, '1958', current_timestamp(), current_timestamp()),
+(NULL, '1968', current_timestamp(), current_timestamp()), (NULL, '1974', current_timestamp(), current_timestamp()), (NULL, '1977', current_timestamp(), current_timestamp()),
+(NULL, '1977 Disco', current_timestamp(), current_timestamp()), (NULL, '1977 RnB', current_timestamp(), current_timestamp()), (NULL, '1980', current_timestamp(), current_timestamp()),
+(NULL, '1981', current_timestamp(), current_timestamp()), (NULL, '1981 RnB', current_timestamp(), current_timestamp()), (NULL, '1981 Soul', current_timestamp(), current_timestamp()),
+(NULL, '1982', current_timestamp(), current_timestamp()), (NULL, '1982 Pop', current_timestamp(), current_timestamp()), (NULL, '1982 R&B', current_timestamp(), current_timestamp()),
+(NULL, '1983', current_timestamp(), current_timestamp()), (NULL, '1984', current_timestamp(), current_timestamp()), (NULL, '1984 Pop', current_timestamp(), current_timestamp()),
+(NULL, '1984 RnB', current_timestamp(), current_timestamp()), (NULL, '1984 Soul', current_timestamp(), current_timestamp()), (NULL, '1985', current_timestamp(), current_timestamp()),
+(NULL, '1985 Covers', current_timestamp(), current_timestamp()), (NULL, '1985 Pop', current_timestamp(), current_timestamp()), (NULL, '1985 RnB', current_timestamp(), current_timestamp()),
+(NULL, '1986', current_timestamp(), current_timestamp()), (NULL, '1986 RnB', current_timestamp(), current_timestamp()), (NULL, '1987', current_timestamp(), current_timestamp()),
+(NULL, '1988', current_timestamp(), current_timestamp()), (NULL, '1988 Dance Pop', current_timestamp(), current_timestamp()),  (NULL, '1989', current_timestamp(), current_timestamp()),
+(NULL, '1989 African', current_timestamp(), current_timestamp()), (NULL, '1989 Rock', current_timestamp(), current_timestamp()), (NULL, '1989 Soft Rock', current_timestamp(), current_timestamp()),
+(NULL, '1990', current_timestamp(), current_timestamp()), (NULL, '1991', current_timestamp(), current_timestamp()), (NULL, '1991 R&B', current_timestamp(), current_timestamp()),
+(NULL, '1991 RnB', current_timestamp(), current_timestamp()), (NULL, '1992', current_timestamp(), current_timestamp()), (NULL, '1992 Dancehall', current_timestamp(), current_timestamp()),
+(NULL, '1992 RnB', current_timestamp(), current_timestamp()), (NULL, '1993', current_timestamp(), current_timestamp()), (NULL, '1993 Hip Hop', current_timestamp(), current_timestamp()),
+(NULL, '1993 Hip-Hop', current_timestamp(), current_timestamp()), (NULL, '1993 Rap', current_timestamp(), current_timestamp()), (NULL, '1993 R&B', current_timestamp(), current_timestamp()),
+(NULL, '1993 RnB', current_timestamp(), current_timestamp()), (NULL, '1994', current_timestamp(), current_timestamp()), (NULL, '1994 Hip Hop', current_timestamp(), current_timestamp()),
+(NULL, '1994 RnB', current_timestamp(), current_timestamp()), (NULL, '1994 Soul', current_timestamp(), current_timestamp()), (NULL, '1995', current_timestamp(), current_timestamp()),
+(NULL, '1995 Hip Hop', current_timestamp(), current_timestamp()), (NULL, '1995 Pop', current_timestamp(), current_timestamp()), (NULL, '1995 RnB', current_timestamp(), current_timestamp()),
+(NULL, '1996', current_timestamp(), current_timestamp()), (NULL, '1996 American', current_timestamp(), current_timestamp()), (NULL, '1996 Hip Hop', current_timestamp(), current_timestamp()),
+(NULL, '1996 Pop', current_timestamp(), current_timestamp()), (NULL, '1996 Reggae', current_timestamp(), current_timestamp()), (NULL, '1996 RnB', current_timestamp(), current_timestamp());
+
+INSERT INTO
+	`tracks` (`track_id`, `track`)
+	VALUES
+	(NULL, 'Right On!'), (NULL, 'Can\'t Get Enough!'), (NULL, 'Lazy'), (NULL, 'Touch Me'), (NULL, 'Make Luv');
+
+
+SELECT * FROM playlists ORDER BY RAND() LIMIT 1;
+
+ 
