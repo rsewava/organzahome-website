@@ -1,8 +1,6 @@
-# organzahome-website
-Official repository for the Organza Home website. A digital storefront curated to bring faith-inspired living into every room through gifts, intentional home decor, and household essentials.
 # 🏠 Organza Home Website
 
-Welcome to the official repository for **Organza Home**. We specialize in gifts, home decor, and household items designed to bring beauty and faith into the modern home.
+Welcome to the official repository for **Organza Home**. A digital storefront curated to bring inspired living into every room through gifts, intentional home decor, and household essentials.
 
 ## ✨ Project Overview
 This repository contains the front-end and back-end code for the Organza Home e-commerce experience. Our goal is to provide a seamless, inspiring shopping journey for our community.
