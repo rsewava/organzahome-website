@@ -26,44 +26,6 @@ CREATE TABLE playlists
 )
 WITH SYSTEM VERSIONING;
 
-CREATE TABLE pages
-(
-	page_id INT(9) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    page VARCHAR(70) UNIQUE NOT NULL,
-    create_date TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    last_update TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    start_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW START,
-    end_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW END,
-    PERIOD FOR SYSTEM_TIME(start_timestamp, end_timestamp)
-)
-WITH SYSTEM VERSIONING;
-
-CREATE TABLE tracks
-(
-	track_id INT(9) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    track VARCHAR(70) UNIQUE NOT NULL,
-    create_date TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    last_update TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    start_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW START,
-    end_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW END,
-    PERIOD FOR SYSTEM_TIME(start_timestamp, end_timestamp)
-)
-WITH SYSTEM VERSIONING;
-
-INSERT INTO
-`artists` (`artist_id`, `artist`, `create_date`, `last_update`)
-VALUES
-(NULL, '2Pac', current_timestamp(6), current_timestamp(6)),
-(NULL, 'Bob Marley', current_timestamp(6), current_timestamp(6)),
-(NULL, 'Drake', current_timestamp(6), current_timestamp(6)),
-(NULL, 'Ginuwine', current_timestamp(6), current_timestamp(6)),
-(NULL, 'Michael Jackson', current_timestamp(6), current_timestamp(6)),
-(NULL, 'Nas', current_timestamp(6), current_timestamp(6)),
-(NULL, 'Nelly Furtado', current_timestamp(6), current_timestamp(6)),
-(NULL, 'Taylor Swift', current_timestamp(6), current_timestamp(6)),
-(NULL, 'The Game', current_timestamp(6), current_timestamp(6)),
-(NULL, 'The Notorious B.I.G.', current_timestamp(6), current_timestamp(6));
-
 INSERT INTO
 `playlists` (`playlist_id`, `playlist`, `create_date`, `last_update`)
 VALUES
@@ -94,7 +56,8 @@ VALUES
 (NULL, '10s Dance', current_timestamp(), current_timestamp()),
 (NULL, '10s Electronic', current_timestamp(), current_timestamp()),
 (NULL, '10s Female Vocalists', current_timestamp(), current_timestamp()),
-(NULL, '10s Hip Hop', current_timestamp(), current_timestamp()), (NULL, '10s Hip-Hop', current_timestamp(), current_timestamp()), (NULL, '10s Hiphop', current_timestamp(), current_timestamp()),
+(NULL, '10s Hip Hop', current_timestamp(), current_timestamp()),
+(NULL, '10s Hip-Hop', current_timestamp(), current_timestamp()), (NULL, '10s Hiphop', current_timestamp(), current_timestamp()),
 (NULL, '10s House', current_timestamp(), current_timestamp()), (NULL, '10s Pop', current_timestamp(), current_timestamp()), (NULL, '10s R&B', current_timestamp(), current_timestamp()),
 (NULL, '10s Rap', current_timestamp(), current_timestamp()), (NULL, '10s Reggae', current_timestamp(), current_timestamp()), (NULL, '10s RnB', current_timestamp(), current_timestamp()),
 (NULL, '10s Trap', current_timestamp(), current_timestamp()), (NULL, '112', current_timestamp(), current_timestamp()), (NULL, '1958', current_timestamp(), current_timestamp()),
@@ -117,6 +80,54 @@ VALUES
 (NULL, '1995 Hip Hop', current_timestamp(), current_timestamp()), (NULL, '1995 Pop', current_timestamp(), current_timestamp()), (NULL, '1995 RnB', current_timestamp(), current_timestamp()),
 (NULL, '1996', current_timestamp(), current_timestamp()), (NULL, '1996 American', current_timestamp(), current_timestamp()), (NULL, '1996 Hip Hop', current_timestamp(), current_timestamp()),
 (NULL, '1996 Pop', current_timestamp(), current_timestamp()), (NULL, '1996 Reggae', current_timestamp(), current_timestamp()), (NULL, '1996 RnB', current_timestamp(), current_timestamp());
+
+CREATE TABLE pages
+(
+	page_id INT(9) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    page VARCHAR(70) UNIQUE NOT NULL,
+    create_date TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    last_update TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    start_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW START,
+    end_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW END,
+    PERIOD FOR SYSTEM_TIME(start_timestamp, end_timestamp)
+)
+WITH SYSTEM VERSIONING;
+
+CREATE TABLE tracks
+(
+	track_id INT(9) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    track VARCHAR(70) UNIQUE NOT NULL,
+    create_date TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    last_update TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    start_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW START,
+    end_timestamp TIMESTAMP(6) GENERATED ALWAYS AS ROW END,
+    PERIOD FOR SYSTEM_TIME(start_timestamp, end_timestamp)
+)
+WITH SYSTEM VERSIONING;
+
+INSERT INTO
+`artists` (`artist_id`, `artist`, `create_date`, `last_update`)
+VALUES
+(NULL, '2Pac', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Bob Marley', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Bruce Springsteen', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Coldplay', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Drake', current_timestamp(6), current_timestamp(6)),
+(NULL, 'George Michael', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Ginuwine', current_timestamp(6), current_timestamp(6)),
+(NULL, 'JAY-Z', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Kanye West', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Madonna', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Michael Jackson', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Nas', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Nelly Furtado', current_timestamp(6), current_timestamp(6)),
+(NULL, 'R. Kelly', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Rihanna', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Simply Red', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Snoop Dogg', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Taylor Swift', current_timestamp(6), current_timestamp(6)),
+(NULL, 'The Game', current_timestamp(6), current_timestamp(6)),
+(NULL, 'The Notorious B.I.G.', current_timestamp(6), current_timestamp(6));
 
 INSERT INTO
 	`tracks` (`track_id`, `track`)
