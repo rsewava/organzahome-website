@@ -35,7 +35,7 @@ VALUES
 (NULL, '00s Covers', current_timestamp(), current_timestamp()),
 (NULL, '00s Dancehall', current_timestamp(), current_timestamp()),
 (NULL, '00s Female Vocalists', current_timestamp(), current_timestamp()),
-(NULL, '00s Folk-pop', current_timestamp(), current_timestamp()),
+(NULL, '00s Folk-Pop', current_timestamp(), current_timestamp()),
 (NULL, '00s Funk', current_timestamp(), current_timestamp()),
 (NULL, '00s Hip Hop', current_timestamp(), current_timestamp()),
 (NULL, '00s Hip-Hop', current_timestamp(), current_timestamp()),
@@ -57,8 +57,10 @@ VALUES
 (NULL, '10s Electronic', current_timestamp(), current_timestamp()),
 (NULL, '10s Female Vocalists', current_timestamp(), current_timestamp()),
 (NULL, '10s Hip Hop', current_timestamp(), current_timestamp()),
-(NULL, '10s Hip-Hop', current_timestamp(), current_timestamp()), (NULL, '10s Hiphop', current_timestamp(), current_timestamp()),
-(NULL, '10s House', current_timestamp(), current_timestamp()), (NULL, '10s Pop', current_timestamp(), current_timestamp()), (NULL, '10s R&B', current_timestamp(), current_timestamp()),
+(NULL, '10s Hip-Hop', current_timestamp(), current_timestamp()),
+(NULL, '10s Hiphop', current_timestamp(), current_timestamp()),
+(NULL, '10s House', current_timestamp(), current_timestamp()),
+(NULL, '10s Pop', current_timestamp(), current_timestamp()), (NULL, '10s R&B', current_timestamp(), current_timestamp()),
 (NULL, '10s Rap', current_timestamp(), current_timestamp()), (NULL, '10s Reggae', current_timestamp(), current_timestamp()), (NULL, '10s RnB', current_timestamp(), current_timestamp()),
 (NULL, '10s Trap', current_timestamp(), current_timestamp()), (NULL, '112', current_timestamp(), current_timestamp()), (NULL, '1958', current_timestamp(), current_timestamp()),
 (NULL, '1968', current_timestamp(), current_timestamp()), (NULL, '1974', current_timestamp(), current_timestamp()), (NULL, '1977', current_timestamp(), current_timestamp()),
@@ -109,25 +111,36 @@ INSERT INTO
 `artists` (`artist_id`, `artist`, `create_date`, `last_update`)
 VALUES
 (NULL, '2Pac', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Aaliyah', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Alicia Keys', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Bob Marley', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Bruce Springsteen', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Coldplay', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Drake', current_timestamp(6), current_timestamp(6)),
 (NULL, 'George Michael', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Ginuwine', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Gloria Estefan', current_timestamp(6), current_timestamp(6)),
 (NULL, 'JAY-Z', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Justin Bieber', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Kanye West', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Keith Sweat', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Lil\' Wayne', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Madonna', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Michael Jackson', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Nas', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Nelly Furtado', current_timestamp(6), current_timestamp(6)),
 (NULL, 'R. Kelly', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Rihanna', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Rick Ross', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Sade', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Simply Red', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Snoop Dogg', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Taylor Swift', current_timestamp(6), current_timestamp(6)),
 (NULL, 'The Game', current_timestamp(6), current_timestamp(6)),
-(NULL, 'The Notorious B.I.G.', current_timestamp(6), current_timestamp(6));
+(NULL, 'The Notorious B.I.G.', current_timestamp(6), current_timestamp(6)),
+(NULL, 'UB40', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Vybz Kartel', current_timestamp(6), current_timestamp(6));
+
 
 INSERT INTO
 	`tracks` (`track_id`, `track`)
@@ -136,5 +149,3 @@ INSERT INTO
 
 
 SELECT * FROM playlists ORDER BY RAND() LIMIT 1;
-
- 
