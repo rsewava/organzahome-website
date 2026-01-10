@@ -11,15 +11,19 @@
 		<title>Organza Home - Welcome</title>
 	</head>
 	<body>
+		<a		aria-label	="Skip directly to main content"
+				class		="skip-link"
+				href		="#maincontent"
+				role		="link">
+			Skip to Main Content
+		</a>
 		<header>
 			<nav>
-				
 			</nav>	
 		</header>
-		<main>
+		<main	id			="maincontent">
 		</main>
 		<footer>
-			
 		</footer>
 	</body>
 </html>
