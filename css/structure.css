@@ -1,5 +1,10 @@
 .skip-link
 {
-  position:               absolute;
-  left:                   -999px;
+	position:               absolute;
+	left:                   -999px;
+}
+
+.skip-link:focus
+{
+	left:					0;
 }
