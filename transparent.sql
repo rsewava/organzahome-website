@@ -17,16 +17,20 @@ WITH SYSTEM VERSIONING;
 INSERT INTO
 `artists` (`artist_id`, `artist`, `create_date`, `last_update`)
 VALUES
+(NULL, '112', current_timestamp(6), current_timestamp(6)),
 (NULL, '2Pac', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Aaliyah', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Alicia Keys', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Billy Ocean', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Bob Marley', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Bruce Springsteen', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Busta Rhymes', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Coldplay', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Drake', current_timestamp(6), current_timestamp(6)),
 (NULL, 'George Michael', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Ginuwine', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Gloria Estefan', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Jagged Edge', current_timestamp(6), current_timestamp(6)),
 (NULL, 'JAY-Z', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Justin Bieber', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Kanye West', current_timestamp(6), current_timestamp(6)),
@@ -36,17 +40,24 @@ VALUES
 (NULL, 'Michael Jackson', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Nas', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Nelly Furtado', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Phil Collins', current_timestamp(6), current_timestamp(6)),
 (NULL, 'R. Kelly', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Redman', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Rihanna', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Rick Ross', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Sade', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Sean Paul', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Simply Red', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Snoop Dogg', current_timestamp(6), current_timestamp(6)),
+(NULL, 'T.I.', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Taylor Swift', current_timestamp(6), current_timestamp(6)),
 (NULL, 'The Game', current_timestamp(6), current_timestamp(6)),
 (NULL, 'The Notorious B.I.G.', current_timestamp(6), current_timestamp(6)),
+(NULL, 'The Weeknd', current_timestamp(6), current_timestamp(6)),
 (NULL, 'UB40', current_timestamp(6), current_timestamp(6)),
+(NULL, 'Usher', current_timestamp(6), current_timestamp(6)),
 (NULL, 'Vybz Kartel', current_timestamp(6), current_timestamp(6));
+
 
 CREATE TABLE playlists
 (
@@ -114,9 +125,11 @@ VALUES
 (NULL, '10s Soca', current_timestamp(6), current_timestamp(6)),
 (NULL, '10s Soul', current_timestamp(6), current_timestamp(6)),
 (NULL, '10s Trap', current_timestamp(6), current_timestamp(6)),
-
-(NULL, '112', current_timestamp(), current_timestamp()), (NULL, '1958', current_timestamp(), current_timestamp()),
-(NULL, '1968', current_timestamp(), current_timestamp()), (NULL, '1974', current_timestamp(), current_timestamp()), (NULL, '1977', current_timestamp(), current_timestamp()),
+(NULL, '112', current_timestamp(6), current_timestamp(6)),
+(NULL, '1958', current_timestamp(6), current_timestamp(6)),
+(NULL, '1968', current_timestamp(6), current_timestamp(6)),
+(NULL, '1974', current_timestamp(6), current_timestamp(6)),
+(NULL, '1977', current_timestamp(6), current_timestamp(6)),
 (NULL, '1977 Disco', current_timestamp(), current_timestamp()), (NULL, '1977 RnB', current_timestamp(), current_timestamp()), (NULL, '1980', current_timestamp(), current_timestamp()),
 (NULL, '1981', current_timestamp(), current_timestamp()), (NULL, '1981 RnB', current_timestamp(), current_timestamp()), (NULL, '1981 Soul', current_timestamp(), current_timestamp()),
 (NULL, '1982', current_timestamp(), current_timestamp()), (NULL, '1982 Pop', current_timestamp(), current_timestamp()), (NULL, '1982 R&B', current_timestamp(), current_timestamp()),

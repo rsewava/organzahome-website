@@ -1,0 +1,7 @@
+/* Start CSS browser reset*/
+body
+{
+  /* 1. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+/*End of CSS browser reset*/
