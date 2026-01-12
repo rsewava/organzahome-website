@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html	lang		="en-GB">
 	<head>
+		<link	href		="css/browserreset.css"
+				rel			="stylesheet">
 		<link	href		="css/colors.css"
 				rel			="stylesheet">
 		<link	href		="css/fonts.css"
