@@ -9,6 +9,8 @@
 				rel			="stylesheet">
 		<link	href		="css/structure.css"
 				rel			="stylesheet">
+		<link	href		="css/unsorted.css"
+				rel			="stylesheet">
 		<meta	charset		="utf-8"/>
 		<meta	content		="A Curated digital storefront curated to bring inspired living into every room through gifts, intentional home decor, and household essentials."
 				name		="Description"/>
@@ -26,11 +28,14 @@
 			Skip to Main Content
 		</a>
 		<header>
-			<nav data-name="Navbar" aria-label="Main" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc d-none d-lg-block shadow-sm ">
-                <div id="o_main_nav" class="o_main_nav container">
-                    <a data-name="Navbar Logo" href="/" class="navbar-brand logo me-4">
-                        <span role="img" aria-label="Logo of Pretty Perfect" title="Pretty Perfect">
-                            <img src="/web/image/website/1/logo/Pretty%20Perfect?unique=766e51f" class="img img-fluid" width="95" height="40" alt="Pretty Perfect" loading="lazy"/>
+			<nav	aria-label	="Main Navigation"
+					class		="navbar navbar-expand-lg navbar-light o_colored_level o_cc d-none d-lg-block shadow-sm ">
+				<div	class		="o_main_nav container"
+						id			="o_main_nav">
+					<a		class		="navbar-brand logo me-4"
+							href		="/">
+                        <span role="img" aria-label="Logo of Organza Home" title="Organza Home">
+                            <img src="img/Organza Home logo Black Transparent Background.webp" class="img img-fluid" width="95" height="40" alt="Organza Home" loading="lazy"/>
                         </span>
                     </a>
                     <ul role="menu" id="top_menu" class="nav navbar-nav top_menu o_menu_loading mx-auto">
@@ -101,8 +106,8 @@
             <nav data-name="Navbar" aria-label="Mobile" class="navbar  navbar-light o_colored_level o_cc o_header_mobile d-block d-lg-none shadow-sm ">
                 <div class="o_main_nav container flex-wrap justify-content-between">
                     <a data-name="Navbar Logo" href="/" class="navbar-brand logo ">
-                        <span role="img" aria-label="Logo of Pretty Perfect" title="Pretty Perfect">
-                            <img src="/web/image/website/1/logo/Pretty%20Perfect?unique=766e51f" class="img img-fluid" width="95" height="40" alt="Pretty Perfect" loading="lazy"/>
+                        <span role="img" aria-label="Logo of Organza Home" title="Organza Home">
+                            <img src="img/Organza Home logo Black Transparent Background.webp" class="img img-fluid" width="95" height="40" alt="Organza Home" loading="lazy"/>
                         </span>
                     </a>
                     <ul class="o_header_mobile_buttons_wrap navbar-nav flex-row align-items-center gap-2 mb-0">

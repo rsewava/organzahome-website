@@ -1,7 +1,16 @@
+@font-face
+{
+	font-family:			'Poppins';
+	font-style:				normal;
+	font-weight:			normal;
+	src:					format('ttf') url(../fonts/Poppins-Medium.ttf);
+}
 /* Start CSS browser reset*/
 body
 {
-  /* 1. Improve text rendering */
-  -webkit-font-smoothing: antialiased;
+	/* 1. Improve text rendering */
+	-webkit-font-smoothing: antialiased;
+	font-family:			"Poppins", sans-serif;
+	font-weight:			normal;
 }
 /*End of CSS browser reset*/
