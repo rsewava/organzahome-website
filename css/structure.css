@@ -1,3 +1,13 @@
+.fa-stack
+{
+	display:				inline-block;
+	height:					2em;
+	line-height:			2em;
+	position:				relative;
+	vertical-align:			middle;
+	width:					2em;
+}
+
 .skip-link
 {
 	position:               absolute;
