@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html	lang		="en-GB">
 	<head>
+		<link	href		="css/all.min.css"
+				rel			="stylesheet">
 		<link	href		="css/browserreset.css"
 				rel			="stylesheet">
 		<link	href		="css/colors.css"
@@ -41,7 +43,7 @@
                     <ul role="menu" id="top_menu" class="nav navbar-nav top_menu o_menu_loading mx-auto">
                         <li role="presentation" class="nav-item">
                             <a role="menuitem" href="/shop/category/home-23" class="nav-link ">
-                                <span>Home Goods</span>
+                            	Home Goods
                             </a>
                         </li>
                         <li role="presentation" class="nav-item">
@@ -183,6 +185,54 @@
             </nav>
 		</header>
 		<main	id			="maincontent">
+                    <div id="wrap" class="oe_structure oe_empty">
+                        <section class="s_cover parallax s_parallax_is_fixed bg-black-50 o_colored_level pt40 pb0" data-scroll-background-ratio="1" data-snippet="s_cover" data-name="Cover">
+                            <span class="s_parallax_bg oe_img_bg o_bg_img_center o_bg_img_origin_border_box" style="background-image: url(&#34;/web/image/33815-55410b1d/IMG_0117.webp&#34;);" data-mimetype="image/webp" data-original-id="28983" data-original-src="/web/image/28983-f1672ab8/IMG_0117.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="1920"></span>
+                            <div class="o_we_bg_filter bg-black-50"></div>
+                            <div class="s_allow_columns container">
+                                <h6 style="text-align: center; font-weight: bold;"><br/></h6><h6 style="text-align: center; font-weight: bold;"><br/></h6><h6 style="text-align: center; font-weight: bold;"><span style="font-size: 1.625rem;">PERFECTLY YOU</span><br/></h6><p style="text-align: center; font-weight: bold;"><span style="font-size: 1.125rem;">Everyday Pieces,&nbsp;Made to Live In&nbsp;</span></p><p style="text-align: center; font-weight: bold;"><br/></p><p style="text-align: center; font-weight: bold;"><br/></p><p style="text-align: center; font-weight: bold;"><br/></p><p style="text-align: center; font-weight: bold;"><br/></p><p style="text-align: center; font-weight: bold;"><br/></p><p style="text-align: center; font-weight: bold;"><br/></p><p class="lead" style="text-align: center;">&nbsp;<a class="btn btn-primary btn-lg" href="/shop/category/jewelry-21"><span style="font-size: 1rem;">SHOP JEWELRY</span></a>&nbsp;</p></div>
+    </section><section class="s_freegrid o_cc o_cc1 o_colored_level pt16 pb0" data-snippet="s_freegrid" data-name="Free grid">
+        <div class="container-fluid">
+            <div class="row o_grid_mode" data-row-count="16">
+                <div class="o_grid_item o_grid_item_image g-col-lg-1 g-height-8 col-lg-1 d-lg-block d-none o_snippet_mobile_invisible o_colored_level order-lg-0" style="z-index: 1; grid-area: 2 / 1 / 10 / 2; --grid-item-padding-y: 0px; --grid-item-padding-x: 0px; order: 0;" data-invisible="1">
+                    <img src="/web/image/33813-aef6ec53/7bd72ce2-3083-4e3e-8591-d96ffdc1c1d0.webp" alt="" class="img img-fluid mx-auto o_we_custom_image" data-mimetype="image/webp" data-original-id="32146" data-original-src="/web/image/32146-1bf11413/7bd72ce2-3083-4e3e-8591-d96ffdc1c1d0.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="NaN" loading="lazy"/>
+                </div>
+                <div class="o_grid_item o_grid_item_image g-col-lg-3 g-height-5 col-lg-3 d-lg-block d-none o_snippet_mobile_invisible o_colored_level order-lg-0" style="z-index: 2; grid-area: 1 / 2 / 6 / 5; --grid-item-padding-y: 8px; --grid-item-padding-x: 16px; order: 1;" data-invisible="1">
+                    <img src="/web/image/33809-1bd2abe7/IMG_3391.webp" alt="" class="img img-fluid mx-auto o_we_custom_image" data-mimetype="image/webp" data-original-id="31762" data-original-src="/web/image/31762-fd9b520c/IMG_3391.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="NaN" loading="lazy"/>
+                </div>
+                <div class="o_grid_item o_grid_item_image g-col-lg-3 g-height-5 col-lg-3 d-lg-block d-none o_snippet_mobile_invisible o_colored_level order-lg-0" style="z-index: 3; grid-area: 6 / 2 / 11 / 5; --grid-item-padding-y: 8px; --grid-item-padding-x: 16px; order: 2;" data-invisible="1">
+                    <img src="/web/image/33811-e6f8fd96/IMG_1576.webp" alt="" class="img img-fluid mx-auto o_we_custom_image" data-mimetype="image/webp" data-original-id="30865" data-original-src="/web/image/30865-157139a2/IMG_1576.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="NaN" loading="lazy"/>
+                </div>
+                <div class="o_grid_item o_grid_item_image g-col-lg-3 g-height-8 col-lg-3 d-lg-block d-none o_snippet_mobile_invisible o_colored_level order-lg-0" style="z-index: 4; grid-area: 2 / 5 / 10 / 8; --grid-item-padding-y: 0px; --grid-item-padding-x: 0px; order: 3;" data-invisible="1">
+                    <img src="/web/image/33810-72522521/IMG_4654.webp" alt="" class="img img-fluid mx-auto o_we_custom_image" data-mimetype="image/webp" data-original-id="20337" data-original-src="/web/image/20337-6fad6642/IMG_4654.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="NaN" loading="lazy"/>
+                </div>
+                
+                <div class="o_grid_item o_grid_item_image g-col-lg-2 g-height-8 col-lg-2 d-lg-block d-none o_snippet_mobile_invisible o_colored_level order-lg-0" style="z-index: 6; grid-area: 2 / 11 / 10 / 13; --grid-item-padding-y: 0px; --grid-item-padding-x: 0px; order: 4;" data-invisible="1">
+                    <img src="/web/image/33812-4b0996fd/IMG_7288.webp" alt="" class="img img-fluid mx-auto o_we_custom_image" data-mimetype="image/webp" data-original-id="26253" data-original-src="/web/image/26253-1494085f/IMG_7288.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="NaN" loading="lazy"/>
+                </div>
+                <div class="o_grid_item g-height-5 g-col-lg-7 col-lg-7 o_colored_level order-lg-0" style="z-index: 7; grid-area: 12 / 2 / 17 / 9; --grid-item-padding-y: 16px; --grid-item-padding-x: 16px; order: 6;">
+                    <h2 style="text-align: left;"><span style="font-size: 1.25rem;">Redefine Your Style with Elegant Everyday Wear Accessories</span></h2></div>
+                <div class="o_grid_item g-height-2 g-col-lg-3 col-lg-3 o_colored_level order-lg-0" style="z-index: 8; grid-area: 12 / 9 / 14 / 12; --grid-item-padding-y: 16px; --grid-item-padding-x: 16px; order: 7;">
+                    <p style="text-align: right;">
+                        <a href="/shop/category/accessories" class="btn btn-primary btn-lg">Browse Accessories</a>
+                    <br/></p>
+                </div>
+            <div class="o_grid_item o_grid_item_image g-col-lg-3 g-height-10 col-lg-3 o_colored_level order-lg-0" style="--grid-item-padding-y: 8px; --grid-item-padding-x: 16px; z-index: 5; grid-area: 1 / 8 / 11 / 11; order: 5;">
+                    <img src="/web/image/30688-ef64d0eb/WhatsApp%20Image%202025-07-18%20at%2009.59.38_a018eb96.webp" alt="" class="img img-fluid mx-auto o_we_custom_image" data-mimetype="image/webp" data-original-id="30687" data-original-src="/web/image/30687-19599225/WhatsApp%20Image%202025-07-18%20at%2009.59.38_a018eb96.jpg" data-mimetype-before-conversion="image/jpeg" data-resize-width="NaN" loading="lazy"/>
+                </div></div>
+        </div>
+    </section><section class="s_cover parallax s_parallax_is_fixed bg-black-50 pb96 o_colored_level o_full_screen_height pt200" data-scroll-background-ratio="1" data-snippet="s_cover" data-name="Cover" style="">
+        <span class="s_parallax_bg oe_img_bg o_bg_img_center o_bg_img_origin_border_box" style="background-position: 50% 0px; background-image: url(&#34;/web/image/33814-97f12204/IMG_4068.webp&#34;);" data-mimetype="image/webp" data-original-id="33174" data-original-src="/web/image/33174-ba5459a1/IMG_4068.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="1125"></span>
+        <div class="o_we_bg_filter bg-black-50"></div>
+        <div class="s_allow_columns container">
+            
+            
+        <div class="row o_grid_mode" data-row-count="7"><div class="o_grid_item g-col-lg-12 g-height-7 col-lg-12 o_colored_level" style="grid-area: 1 / 1 / 8 / 13; z-index: 1;"><h1 class="display-3" style="text-align: center; font-weight: bold;">
+        <span style="font-size: 2rem;"><b>STYLE WOVEN INTO EVERY CORNER</b></span></h1><p><span style="font-size: 2rem;"><br/></span></p><p style="text-align: center;">
+                <a class="btn btn-primary btn-lg" href="/shop/category/home-23"><span style="font-size: 1.25rem;">&nbsp;SHOP HOME DECOR</span></a><br/></p></div></div></div>
+    </section></div>
+    
+        <div id="o_shared_blocks" class="oe_unremovable"></div>
 		</main>
 		<footer>
 		</footer>

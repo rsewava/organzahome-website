@@ -5,6 +5,14 @@
 	font-weight:			normal;
 	src:					format('ttf') url(../fonts/Poppins-Medium.ttf);
 }
+
+@font-face
+{
+	font-family:			'FontAwesome';
+	font-style:				normal;
+	font-weight:			900;
+	src:					format('woff2') url(../fonts/fa-solid-900.woff2);
+}
 /* Start CSS browser reset*/
 body
 {
@@ -14,3 +22,9 @@ body
 	font-weight:			normal;
 }
 /*End of CSS browser reset*/
+
+
+.fa
+{
+	font-family:			"FontAwesome" !important;
+}
